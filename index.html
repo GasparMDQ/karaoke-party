@@ -20,7 +20,7 @@
 <!-- Confetti container -->
 <div id="confetti-container"></div>
 
-<div class="container main-container mt-3 mb-5 pb-5">
+<div class="container main-container mb-5 pb-5" id="songListContainer">
     <header class="app-header text-center py-3">
         <div class="logo-container">
             <i class="fas fa-microphone-alt logo-icon"></i>
@@ -28,7 +28,15 @@
         <h1 class="app-title">Karaoke Party</h1>
         <p class="app-subtitle">Find your perfect song to sing!</p>
     </header>
-
+    <div class="disc-selector mb-4">
+        <button id="discSelectorBtn" class="btn btn-disc-select">
+            <span id="currentDiscName">Select a Song Collection</span>
+            <i class="fas fa-chevron-down ms-2"></i>
+        </button>
+        <div id="discDropdown" class="disc-dropdown">
+            <!-- Disc options will be populated here -->
+        </div>
+    </div>
     <div class="search-container mb-4">
         <div class="input-group">
                 <span class="input-group-text search-icon">
@@ -81,11 +89,6 @@
         </div>
     </div>
 
-    <div id="noResults" class="alert alert-custom d-none">
-        <i class="fas fa-info-circle me-2"></i>
-        No songs found matching your search.
-    </div>
-
     <div class="song-list-container">
         <ul class="song-list" id="songList">
             <!-- Songs will be loaded here -->
@@ -95,7 +98,7 @@
 
 <!-- Bottom navigation -->
 <nav class="mobile-nav">
-    <button class="nav-item active">
+    <button class="nav-item active" id="showSearch">
         <i class="fas fa-search"></i>
         <span>Search</span>
     </button>
