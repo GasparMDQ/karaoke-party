@@ -39,6 +39,10 @@ Remember, each song list should be a `.txt` file in the `discs` folder. Format e
 
 Now you're all set to host an epic karaoke party with your personalized song collections! 🎉🎵
 
+## 🎵 Live Demo
+
+Want to see the Karaoke Party App in action? Check out our [live demo](https://gasparmdq.github.io/karaoke-party/)!
+
 ## 🖥️ Local Testing
 
 Want to test the app on your own computer? It's a breeze with Caddy! Just use this magic command:
